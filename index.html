@@ -1,73 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pemrograman Web 1 - HTML Dasar</title>
+  <title>Web1</title>
   <style>
-    .example {
-      background-color: #e7f4ff;
-      margin: 10px 0;
+    html{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-
-    .code {
-      background-color: #f4f4f4;
-      border: 1px solid #ddd;
-      font-family: monospace;
+    header{
+      text-align: center;
+    }
+    main {
+      display: flex;
+      gap: 10px;
+    }
+    #pertemuan, #tugas {
+      width: 50%;
+      border: 1px solid #000;
+      border-radius: 10px;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    }
+    .title {
+      text-align: center;
+    }
+    a:visited, a:link {
+      color: #000;
     }
   </style>
 </head>
-
 <body>
-  <h1>Pemrograman Web 1</h1>
-  <hr>
-  <h2>Pengenalan HTML</h2>
-  <p>HTML (Hypertext Markup Language) adalah sebuah bahasa markup yang digunakan untuk membuat halaman web dan
-    menampilkan berbagai informasi di dalam browser. HTML terdiri dari tag-tag yang menginstruksikan browser untuk
-    menghasilkan tampilan sesuai dengan yang diinginkan.</p>
-
-  <h2>Sejarah HTML</h2>
-  <ul>
-    <li>HTML 2.0 (RFC1866) disetujui pada 22 September 1995</li>
-    <li>HTML 3.2 - 14 Januari 1996</li>
-    <li>HTML 4.0 - 18 Desember 1997</li>
-    <li>XHTML 1.0 - 24 Januari 2000</li>
-  </ul>
-
-  <h2>Struktur Dasar HTML</h2>
-  <p>Sebuah dokumen HTML memiliki struktur dasar sebagai berikut:</p>
-  <div class="code">
-    &lt;html&gt;<br>
-    &lt;head&gt;<br>
-    &nbsp;&nbsp;&lt;title&gt;Judul Halaman&lt;/title&gt;<br>
-    &lt;/head&gt;<br>
-    &lt;body&gt;<br>
-    &nbsp;&nbsp;... Konten halaman ...<br>
-    &lt;/body&gt;<br>
-    &lt;/html&gt;
-  </div>
-
-  <h2>Tag-Tag Dasar</h2>
-  <p>Berikut beberapa tag dasar dalam HTML:</p>
-  <div class="example">
-    <strong>Heading</strong>: <code>&lt;h1&gt;...&lt;/h1&gt;</code> hingga <code>&lt;h6&gt;...&lt;/h6&gt;</code> untuk
-    membuat judul.<br>
-    <strong>Paragraf</strong>: <code>&lt;p&gt;...&lt;/p&gt;</code> untuk membuat sebuah paragraf.<br>
-    <strong>Gambar</strong>: <code>&lt;img src="gambar.jpg" alt="Deskripsi Gambar" /&gt;</code> untuk menampilkan
-    gambar.<br>
-    <strong>Hyperlink</strong>: <code>&lt;a href="url"&gt;Teks Link&lt;/a&gt;</code> untuk membuat tautan.
-  </div>
-
-  <h2>Contoh Penggunaan Tag</h2>
-  <div class="example">
-    <h3>Heading 3</h3>
-    <p>Ini adalah contoh paragraf yang ditulis menggunakan tag <code>&lt;p&gt;</code>. Tag ini digunakan untuk membuat
-      teks berada dalam satu paragraf.</p>
-    <img src="pictures/Untad new.png" alt="Untad" height="150px" />
-    <p>Untuk melihat lebih lanjut, kunjungi <a href="https://www.google.com">website ini</a>.</p>
-  </div>
-
+  <header>
+    <h1>Pemrograman Web 1</h1>
+    <h4>Avav Abdillah Sam F551 23 020</h4>
+  </header>
+  <main>
+    <div id="pertemuan">
+      <h2 class="title">Pertemuan</h2>
+      <ul>
+        <li><a href="pertemuan1.html">Pertemuan 1</a></li>
+        <li><a href="pertemuan2.html">Pertemuan 2</a></li>
+      </ul>
+    </div>
+    <div id="tugas">
+      <h2 class="title">Tugas</h2>
+      <ul>
+        <li><a href="tugas1/index.html">Tugas 1 (membuat form)</a></li>
+      </ul>
+    </div>
+  </main>
 </body>
-
 </html>
